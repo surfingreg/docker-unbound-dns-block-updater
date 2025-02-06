@@ -28,7 +28,7 @@ To confirm Unbound is using the mega block list:
 Run some tests:
 ``` 
 # replace 10.1.1.74 with the IP address you're running docker unbound on:
-nslookup twitter.com - 10.1.1.74 		# should return a public IP; twitter.com is not in the a-records.conf
+nslookup twitter.com - 10.1.1.74 	# should return a public IP; twitter.com is not in the a-records.conf
 nslookup ads.twitter.com - 10.1.1.74	# should return 0.0.0.0 indicating the subdomain is sinkholed (blocked)
 nslookup xyz.twitter.com - 10.1.1.74	# should return nothing; this isn't in the a-records.conf and isn't real
 ```
