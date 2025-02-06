@@ -5,9 +5,9 @@ Run your own DNS sinkhole server to block 120k+ ad domains
 These repos have done all the work. By default this will block over 123,000 ad and fake domains. Kinda like PiHole except run it on your own hardware. These two files (run.sh and Dockerfile) only combine these repos and one of my own to insert the continuously maintained and open-sourced database of yucky domains into Unbound. On any Linux or Mac (maybe Win too with Linux subsystem) just run this bash script and in a few seconds you'll have a blocking DNS server.
 
 ## Sources
-https://github.com/MatthewVance/unbound-docker
-https://github.com/StevenBlack/hosts
-https://github.com/surfingreg/rust-unbound-dns-block
+https://github.com/MatthewVance/unbound-docker  
+https://github.com/StevenBlack/hosts  
+https://github.com/surfingreg/rust-unbound-dns-block  
 
 ## Usage
 > git clone https://github.com/surfingreg/docker-unbound-dns-block-updater
