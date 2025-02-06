@@ -1,5 +1,5 @@
 # docker-unbound-dns-block-updater
-Run your own DNS sinkhole server to block 120k+ ad domains
+Cleanly inside a Docker container, run your own DNS sinkhole server to block 120k+ ad domains
 
 ## Background
 The repos below have done all the work. These simple bash and Docker files bring them together to block over 123,000 ad and fake domains on your own DNS server. Preferably run it on a computer on your home LAN with a stable IP address. So, it's like PiHole except on your own hardware. 
