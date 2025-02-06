@@ -33,6 +33,6 @@ nslookup ads.twitter.com - 10.1.1.74	# should return 0.0.0.0 indicating the subd
 nslookup xyz.twitter.com - 10.1.1.74	# should return nothing; this isn't in the a-records.conf and isn't real
 ```
 
-## Requirements
-- Docker installed (Install Docker: https://docs.docker.com/engine/install/)
+## Prerequisites
+- Docker installed (https://docs.docker.com/engine/install/)
 - Linux or MacOS (maybe Win with Linux subsystem)
