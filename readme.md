@@ -2,7 +2,7 @@
 Run your own DNS sinkhole server to block 120k+ ad domains
 
 ## Background
-These repos have done all the work. By default this will block over 123,000 ad and fake domains. Kinda like PiHole except run it on your own hardware. These two files (run.sh and Dockerfile) only combine these repos and one of my own to insert the continuously maintained and open-sourced database of yucky domains into Unbound. On any Linux or Mac (maybe Win too with Linux subsystem) just run this bash script and in a few seconds you'll have a blocking DNS server.
+The repos below have done all the work. These simple bash and Docker files bring them together to block over 123,000 ad and fake domains on your own DNS server. Preferably run it on a computer on your home LAN with a stable IP address. So, it's like PiHole except on your own hardware. 
 
 ## Sources
 https://github.com/MatthewVance/unbound-docker  
@@ -32,3 +32,7 @@ nslookup twitter.com - 10.1.1.74 			# should return a public IP; twitter.com is 
 nslookup ads.twitter.com - 10.1.1.74		# should return 0.0.0.0 indicating the subdomain is sinkholed (blocked)
 nslookup xyz.twitter.com - 10.1.1.74		# should return nothing; this isn't in the a-records.conf and isn't real
 ```
+
+## Requirements
+- Docker installed
+- Linux or MacOS (maybe Win with Linux subsystem)
